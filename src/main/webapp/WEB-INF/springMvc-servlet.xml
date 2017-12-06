@@ -37,7 +37,7 @@
         <!--<bean class="com.sunp.common.interceptor.Myinterceptor"/>-->
         <!--&lt;!&ndash;对特定的请求进行拦截&ndash;&gt;-->
         <mvc:interceptor>
-            <mvc:mapping path="/user/*/*"/>
+            <mvc:mapping path="/user/*/**"/>
             <bean class="com.springmvc.demo.handler.MyHandlerDemo" />
         </mvc:interceptor>
     </mvc:interceptors>
